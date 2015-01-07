@@ -1,0 +1,168 @@
+/* Cross Browser Compatability CSS */
+/**
+ * html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline)
+ * v1.6.1 2010-09-17 | Authors: Eric Meyer & Richard Clark
+ * html5doctor.com/html-5-reset-stylesheet/
+ */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after { content: ""; content: none; }
+
+ins { background-color: #ff9; color: #000; text-decoration: none; }
+
+mark { background-color: #ff9; color: #000; font-style: italic; font-weight: bold; }
+
+del { text-decoration: line-through; }
+
+abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+
+input, select { vertical-align: middle; }
+
+/* Styles begin here */
+h1 {
+text-align: center; 
+font-family: 'oswald'; 
+font-size: 63px;  
+color: #ffffff; 
+line-height: 25px;
+padding-top: 25px;
+}
+h2 {
+text-align: center; 
+font-family: 'oswald'; 
+font-size: 40px; 
+color: #354e23;
+}
+h3 {
+font-family: 'oswald'; 
+text-align: center; 
+font-size: 30px; 
+color: #433761;
+}
+p {font-family: 'poly'; 
+font-size: 16px; 
+color: #0f0f0f; 
+margin: 20px 20px 20px 20px;
+}
+
+body {
+background: url('http://i306.photobucket.com/albums/nn258/lwcstyling/creek-217_1920.jpg');
+background-position: center;
+background-attachment: fixed;
+background-size: cover;
+/* 
+max-width: 960px;
+margin: 0 auto;
+width: 100%;
+ */
+}
+#main {
+margin: 0px 0px 200px 0px;
+/* background: rgba(0, 0, 0, 0.8);  */
+padding: 25px 0px 25px 0px;
+height: 200px;
+background: -webkit-linear-gradient(#0f0f0f, transparent); /* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient(#0f0f0f, transparent); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(#0f0f0f, transparent); /* For Firefox 3.6 to 15 */
+background: linear-gradient(#0f0f0f, transparent); /* Standard syntax (must be last) */
+}
+
+#logo {
+float: left;
+margin: 0px 15px 15px 15px;
+}
+
+#sitenav {
+float: left;
+padding-top: 0px;
+}
+ul li {
+font-family: 'oswald';
+text-transform: uppercase;
+text-align: left;
+font-size: 18px;
+display: inline;
+padding: 15px 15px 0px 15px;
+}
+ul li a {
+text-decoration: none;
+color: #c9e19d;
+}
+#intro {background: rgba(230, 246, 226, 0.85);
+margin: 0px 160px 50px 160px;
+padding: 40px 20px 40px 20px;
+}
+
+#learnmore {
+text-decoration: none;
+font-family: 'poly';
+font-style: italic;
+font-size: 16px;
+color: #0f0f0f;
+}
+
+#hide-bio {
+text-decoration: none;
+font-family: 'poly'; 
+font-style: italic;
+font-size: 16px; 
+color: #0f0f0f;
+}
+
+.moreinfo {
+font-family: 'poly'; 
+font-size: 16px; 
+text-align: left; 
+color: #0f0f0f; 
+}
+
+#buttons ul {
+color: #ffffff;
+}
+
+#footer {
+margin: 100px 0px 0px 0px;
+padding: 15px 0px 0px 0px;
+text-align: center;
+height: 200px;
+background: -webkit-linear-gradient(transparent, #0f0f0f); /* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient(transparent, #0f0f0f); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(transparent, #0f0f0f);  /* For Firefox 3.6 to 15 */
+background: linear-gradient(transparent, #0f0f0f); /* Standard syntax (must be last) */
+}
+
+#social {
+color: #c9e19d;
+font-size: 18px;
+text-transform: uppercase;
+padding-top: 160px;
+}
+/* Designed & Developed by Lisa W. Crawford for Cambrian Environmental */
