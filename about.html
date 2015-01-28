@@ -1,0 +1,60 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+  <title>Cambrian Environmental</title>
+<!--   <link rel="shortcut icon" type="image/ico" href="favicon.ico"> -->
+  <link rel="stylesheet" href="style.css">
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Poly:400,400italic' rel='stylesheet' type='text/css'>
+<!--   <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"> -->
+<!--   <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+</head>
+<body>
+  
+<section id="main">
+
+<div id="logo">
+<a href="index.html"><img src="http://i306.photobucket.com/albums/nn258/lwcstyling/Cambrianlogo1715.jpg" border="0" alt="Cambrian logo"/></a>
+</div>
+
+<ul id="sitenav">
+<li><a href="about.html">About</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="contact.html">Contact</a></li></ul></section>
+
+<section id="about">
+<div class="bios">
+<h2>Kemble White, PhD, PG</h2>
+<p>Prior to starting Cambrian Environmental Dr. White served for 15 years as senior geologist, karst specialist, and project manager for one of the largest ecological consulting firms in the country.  Dr. White specializes in the endangered Species Act and water quality regulations as they pertaining to caves, springs and the Edwards Aquifer. He helps clients find the middle ground between the needs of natural resource protection and human popluation growth.  Kemble's doctorate was in biospeleology, the study of cave ecology.  His research has been published in Geology, one of the world's flagship peer-reviewed scientific journals. Two species have been named in his honor and he has discovered numerous new locations for rare and endangered species.  Kemble is a licensed professional geoscientist and holds the applicable U.S. Fish and Wildlife Service permits for working with threatened and endangered karst species in the Austin San Antonio growth corridor.
+</p></div>
+<div class="bios"><h2>Craig Crawford, PG</h2>
+<p>Mr. Crawford has ten years experience with Edwards aquifer compliance issues.  His specialties include managing the regulatory process when caves and other significant karst features are encountered during construction site excavation.  He is also accomplished at the management and monitoring of springs and habitat for threatened and endangered Eurycea salamanders. This includes water quality and aqueous geochemistry studies. Craig is a licensed professional geoscientist and holds the applicable U.S. Fish and Wildlife Service permits for working with threatened and endangered karst species in central Texas.
+</p></div>
+<div class="bios"><h2>Ashley Wall</h2>
+<p>Bacon ipsum dolor amet flank alcatra biltong doner landjaeger ham hock. Prosciutto pig chicken ham hock. Doner shankle prosciutto sirloin venison ribeye salami shoulder short ribs tri-tip drumstick fatback chicken tail. Jerky landjaeger andouille brisket, ham boudin venison drumstick pancetta kevin pork belly leberkas. Landjaeger meatloaf pancetta rump jowl corned beef. Swine ribeye brisket bresaola turkey fatback leberkas sausage biltong tri-tip short ribs.
+</p></div>
+</section>
+
+
+
+<section id="footer">
+<h2 id="social">Connect with us on Facebook</h2>
+</section>
+
+</body>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="text/javascript" href="script.js"></script>
+<script>
+var moreBio = $('learnmore');
+moreBio.click(expandBio);
+function expandBio() {
+  var hiddenText = document.getElementById('more-bio');
+  hiddenText.style.display = "block";}
+var hideButton = $('hide-bio');
+hideButton.click(hideFunction);
+function hideFunction() {
+  var removeText = document.getElementById("more-bio");
+  removeText.style.display = "none";}
+</script>
+</html>
