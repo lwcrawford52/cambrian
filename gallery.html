@@ -1,55 +1,122 @@
-<!doctype html>
-<head>
-  <meta charset="utf-8">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+	<!--
+		Supersized - Fullscreen Slideshow jQuery Plugin
+		Version : 3.2.7
+		Site	: www.buildinternet.com/project/supersized
+		
+		Author	: Sam Dunn
+		Company : One Mighty Roar (www.onemightyroar.com)
+		License : MIT License / GPL License
+	-->
+
+	<head>
+<meta charset="utf-8">
   <title>Cambrian Environmental</title>
-<!--   <link rel="shortcut icon" type="image/ico" href="favicon.ico"> -->
+  <link rel="shortcut icon" type="image/ico" href="favicon.ico">
   <link rel="stylesheet" href="style.css">
+
   <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Poly:400,400italic' rel='stylesheet' type='text/css'>
-<!--   <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"> -->
-<!--   <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
-</head>
-<body>
   
-<section id="main">
+		<title>Supersized - Full Screen Background Slideshow jQuery Plugin</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		
+		<link rel="stylesheet" href="css/supersized.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="theme/supersized.shutter.css" type="text/css" media="screen" />
+		
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+		
+		<script type="text/javascript" src="js/supersized.3.2.7.min.js"></script>
+		<script type="text/javascript" src="theme/supersized.shutter.min.js"></script>
+		
+		<script type="text/javascript">
+			
+			jQuery(function($){
+				
+				$.supersized({
+				
+					// Functionality
+					slide_interval          :   8000,		// Length between transitions
+					transition              :   1, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+					transition_speed		:	700,		// Speed of transition
+															   
+					// Components							
+					slide_links				:	'blank',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
+					slides 					:  	[			// Slideshow Images
+														{image : 'http://i306.photobucket.com/albums/nn258/lwcstyling/122.jpeg', title : 'Stock Image 1', thumb : 'http://i306.photobucket.com/albums/nn258/lwcstyling/122.jpeg'},
+														{image : 'http://i306.photobucket.com/albums/nn258/lwcstyling/610.jpeg', title : 'Stock Image 2', thumb : 'http://i306.photobucket.com/albums/nn258/lwcstyling/610.jpeg'},  
+														{image : 'http://i306.photobucket.com/albums/nn258/lwcstyling/Skillcrush_Mountains.jpg', title : 'Stock Image 3', thumb : 'http://i306.photobucket.com/albums/nn258/lwcstyling/Skillcrush_Mountains.jpg'}
+														
+												]
+					
+				});
+		    });
+		    
+		</script>
+		
+	</head>
+
+<body>
+
+	<section id="main">
 
 <div id="logo">
 <a href="index.html"><img src="http://i306.photobucket.com/albums/nn258/lwcstyling/Cambrianlogo1715.jpg" border="0" alt="Cambrian logo"/></a>
 </div>
 
-<ul id="sitenav">
-<li><a href="about.html">About</a></li>
-<li><a href="services.html">Services</a></li>
-<li><a href="gallery.html">Gallery</a></li>
-<li><a href="contact.html">Contact</a></li></ul></section>
-
-<section id="intro">
-<h2>FANCY GALLERY SLIDESHOW</h2>
-<p>Maintaining the quality of life in central Texas depends on striking the right balance between infrastructure development and natural resources protection. Cambrian Environmental provides specialty hydrogeological and biological consulting services for the Austin-San Antonio growth corridor. <a id="learnmore" style="display: inline" href="#intro"> More...</a></p>
-<span id="more-bio" style="display: none">
-<p class='moreinfo'>We provide support services to both development and conservation entities operating within the environmentally-sensitive Edwards Aquifer system where development activities are subject to overlapping Federal, State and local regulations that protect water quality and endangered species.</p>
-<p class='moreinfo'>In order to comply with these regulations development projects are required to conduct various due diligence investigations, to avoid and minimize environmental impacts based on those investigations.
-<a id="hide-bio" href="#intro">Hide.</a></p></span></div></section>
-
-
-
-<section id="footer">
-<h2 id="social">Connect with us on Facebook</h2>
-</section>
+<ul class="sitenav">
+<li class="navitem"><a href="about.html">About</a></li>
+<li class="navitem"><a href="services.html">Services</a></li>
+<li class="navitem"><a href="gallery.html">Gallery</a></li>
+<li class="navitem"><a href="contact.html">Contact</a></li></ul></section>
+	
+<!-- Slideshow -->
+	<!--Thumbnail Navigation-->
+	<div id="prevthumb"></div>
+	<div id="nextthumb"></div>
+	
+	<!--Arrow Navigation-->
+	<a id="prevslide" class="load-item"></a>
+	<a id="nextslide" class="load-item"></a>
+	
+	<div id="thumb-tray" class="load-item">
+		<div id="thumb-back"></div>
+		<div id="thumb-forward"></div>
+	</div>
+	
+	<!--Time Bar-->
+	<!-- 
+<div id="progress-back" class="load-item">
+		<div id="progress-bar"></div>
+	</div>
+	
+ -->
+	<!--Control Bar-->
+	<div id="controls-wrapper" class="load-item">
+		<div id="controls">
+			
+			<a id="play-button"><img id="pauseplay" src="img/pause.png"/></a>
+		
+			<!--Slide counter-->
+			<div id="slidecounter">
+				<span class="slidenumber"></span> / <span class="totalslides"></span>
+			</div>
+			
+			<!--Slide captions displayed here-->
+			<div id="slidecaption"></div>
+			
+			<!--Thumb Tray button-->
+			<a id="tray-button"><img id="tray-arrow" src="img/button-tray-up.png"/></a>
+			
+			<!--Navigation-->
+			<ul id="slide-list"></ul>
+			
+		</div>
+	</div>
 
 </body>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script src="text/javascript" href="script.js"></script>
-<script>
-var moreBio = $('learnmore');
-moreBio.click(expandBio);
-function expandBio() {
-  var hiddenText = document.getElementById('more-bio');
-  hiddenText.style.display = "block";}
-var hideButton = $('hide-bio');
-hideButton.click(hideFunction);
-function hideFunction() {
-  var removeText = document.getElementById("more-bio");
-  removeText.style.display = "none";}
-</script>
 </html>
